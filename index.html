@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Billing System</title>
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"> -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <div class="my-5 container-fluid">
+        <div class="row">
+            <div class="col-xl-8">
+                <h1 class="text-center text-white py-4">Billing System</h1>
+                <form id="billingForm" class="bg-light p-4 rounded">
+                    <section id="customerDetails" class="mb-4">
+
+                        <h2 class="text-center text-dark">Customer Details</h2>
+                        <div class="mt-2">
+                            <label for="customerName">Customer Name:</label>
+                            <input type="text" class="form-control" id="customerName" name="customerName" required>
+
+                        </div>
+                        <div class="mt-2">
+                            <label for="contactNo">Contact No.:</label>
+                            <input type="text" class="form-control" id="contactNo" name="contactNo" required>
+                        </div>
+                        <div class="mt-2">
+                            <label for="billNo">Bill No.:</label>
+                            <input type="text" class="form-control" id="billNo" name="billNo" value="JYOTI127" readonly>
+                        </div>
+                    </section>
+                    <section id="productsSection" class="mb-4">
+                        <div class="row">
+                            <div class="col-md-4 mb-3">
+                                <div class="category bg-light p-3 rounded">
+                                    <h2 class="text-center text-dark">Snacks</h2>
+                                    <div class="mt-2">
+                                        <label for="snack1">Nutella Choco Spread:</label>
+                                        <input type="number" class="form-control" value="0" id="snack1" name="snack1"
+                                            min="0" max="3">
+                                        <span id="error_snack1"></span>
+                                    </div>
+                                    <div class="mt-2">
+                                        <label for="snack2">Noodles (1 Pack):</label>
+                                        <input type="number" class="form-control" value="0" id="snack2" name="snack2"
+                                            min="0" max="3">
+                                        <span id="error_snack2"></span>
+                                    </div>
+                                    <div class="mt-2">
+                                        <label for="snack3">Lays (10 Rs):</label>
+                                        <input type="number" class="form-control" value="0" id="snack3" name="snack3"
+                                            min="0" max="3">
+                                        <span id="error_snack3"></span>
+                                    </div>
+                                    <div class="mt-2">
+                                        <label for="snack4">Oreo (20 Rs):</label>
+                                        <input type="number" class="form-control" value="0" id="snack4" name="snack4"
+                                            min="0" max="3">
+                                        <span id="error_snack4"></span>
+
+                                    </div>
+                                    <div class="mt-2">
+                                        <label for="snack5">Chocolate Muffin:</label>
+                                        <input type="number" class="form-control" value="0" id="snack5" name="snack5"
+                                            min="0" max="3">
+                                        <span id="error_snack5"></span>
+                                    </div>
+                                    <div class="mt-2">
+                                        <label for="snack6">Dairy Milk Silk (60 Rs):</label>
+                                        <input type="number" class="form-control" value="0" id="snack6" name="snack6"
+                                            min="0" max="3">
+                                        <span id="error_snack6"></span>
+
+                                    </div>
+                                    <div class="mt-2">
+                                        <label for="snack7">Muskmeelon (5 Rs):</label>
+                                        <input type="number" class="form-control" value="0" id="snack7" name="snack7"
+                                            min="0" max="3">
+                                        <span id="error_snack7"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-3">
+                                <div class="category bg-light text-dark p-3 rounded">
+                                    <h2 class="text-center text-dark">Grocery</h2>
+                                    <div class="mt-2">
+                                        <label for="grocery1">Aashirvaad Atta (1 kg):</label>
+                                        <input type="number" class="form-control" value="0" id="grocery1"
+                                            name="grocery1" min="0" max="3">
+                                        <span id="error_grocery1"></span>
+                                    </div>
+                                    <div class="mt-2">
+                                        <label for="grocery2">Pasta (1 kg):</label>
+                                        <input type="number" class="form-control" value="0" id="grocery2"
+                                            name="grocery2" min="0" max="3">
+                                        <span id="error_grocery2"></span>
+                                    </div>
+                                    <div class="mt-2">
+                                        <label for="grocery3">Basmati Rice (1 kg):</label>
+                                        <input type="number" class="form-control" value="0" id="grocery3"
+                                            name="grocery3" min="0" max="3">
+                                        <span id="error_grocery3"></span>
+                                    </div>
+                                    <div class="mt-2">
+                                        <label for="grocery4">Sunflower Oil (1 ltr):</label>
+                                        <input type="number" class="form-control" value="0" id="grocery4"
+                                            name="grocery4" min="0" max="3">
+                                        <span id="error_grocery4"></span>
+                                    </div>
+                                    <div class="mt-2">
+                                        <label for="grocery5">Refined Sugar (1 kg):</label>
+                                        <input type="number" class="form-control" value="0" id="grocery5"
+                                            name="grocery5" min="0" max="3">
+                                        <span id="error_grocery5"></span>
+                                    </div>
+                                    <div class="mt-2">
+                                        <label for="grocery6">Daal (1 kg):</label>
+                                        <input type="number" class="form-control" value="0" id="grocery6"
+                                            name="grocery6" min="0" max="3">
+                                        <span id="error_grocery6"></span>
+                                    </div>
+                                    <div class="mt-2">
+                                        <label for="grocery7">Tea Powder (1 kg):</label>
+                                        <input type="number" class="form-control" value="0" id="grocery7"
+                                            name="grocery7" min="0" max="3">
+                                        <span id="error_grocery7"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-3">
+                                <div class="category bg-light text-dark p-3 rounded">
+                                    <h2 class="text-center text-dark">Beauty & Hygiene</h2>
+                                    <div class="mt-2">
+                                        <label for="beauty1">Bathing Soap:</label>
+                                        <input type="number" class="form-control" value="0" id="beauty1" name="beauty1"
+                                            min="0" max="3">
+                                        <span id="error_beauty1"></span>
+                                    </div>
+                                    <div class="mt-2">
+                                        <label for="beauty2">Shampoo (1 ltr):</label>
+                                        <input type="number" class="form-control" value="0" id="beauty2" name="beauty2"
+                                            min="0" max="3">
+                                        <span id="error_beauty2"></span>
+                                    </div>
+                                    <div class="mt-2">
+                                        <label for="beauty3">Body Lotion (1 ltr):</label>
+                                        <input type="number" class="form-control" value="0" id="beauty3" name="beauty3"
+                                            min="0" max="3">
+                                        <span id="error_beauty3"></span>
+                                    </div>
+                                    <div class="mt-2">
+                                        <label for="beauty4">Face Cream:</label>
+                                        <input type="number" class="form-control" value="0" id="beauty4" name="beauty4"
+                                            min="0" max="3">
+                                        <span id="error_beauty4"></span>
+                                    </div>
+                                    <div class="mt-2">
+                                        <label for="beauty5">Shaving Foam:</label>
+                                        <input type="number" class="form-control" value="0" id="beauty5" name="beauty5"
+                                            min="0" max="3">
+                                        <span id="error_beauty5"></span>
+                                    </div>
+                                    <div class="mt-2">
+                                        <label for="beauty6">Face Mask (1 piece):</label>
+                                        <input type="number" class="form-control" value="0" id="beauty6" name="beauty6"
+                                            min="0" max="3">
+                                        <span id="error_beauty6"></span>
+                                    </div>
+                                    <div class="mt-2">
+                                        <label for="beauty7">Hand Sanitizer (50 ml):</label>
+                                        <input type="number" class="form-control" value="0" id="beauty7" name="beauty7"
+                                            min="0" max="3">
+                                        <span id="error_beauty7"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <div class="text-center">
+                        <p id="empty" class="fw-bold text-danger"></p>
+                        <button type="button" class="btn btn-warning rounded-pill mx-2" onclick="generateBill()">Total
+                            Bill</button>
+                        <button type="reset" class="btn btn-danger rounded-pill">Clear Field</button>
+                    </div>
+                </form>
+            </div>
+            <div class="col-xl-4 mt-5 output">
+                <section id="billingSummary" class="mt-4 bg-light p-4 rounded">
+                    <h2 class="text-center text-dark">Billing Summary</h2>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="mt-2">
+                                <label>Total Snacks Price:</label>
+                                <span id="snacksTotal">0</span>
+                            </div>
+                            <div class="mt-2">
+                                <label>Snacks Tax:</label>
+                                <span id="snacksTax">0</span>
+                            </div>
+                            <div class="mt-2">
+                                <label>Total Grocery Price:</label>
+                                <span id="groceryTotal">0</span>
+                            </div>
+                            <div class="mt-2">
+                                <label>Grocery Tax:</label>
+                                <span id="groceryTax">0</span>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="mt-2">
+                                <label>Total Beauty & Hygiene Price:</label>
+                                <span id="beautyTotal">0</span>
+                            </div>
+                            <div class="mt-2">
+                                <label>Beauty & Hygiene Tax:</label>
+                                <span id="beautyTax">0</span>
+                            </div>
+                            <div class="mt-2">
+                                <label>Total Bill:</label>
+                                <span id="totalBill">0</span>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <div id="billArea" class="bg-light mt-5 p-4 rounded">
+                    <h2 class="text-center text-dark">Bill Area</h2>
+                    <p class="text-center">WELCOME TO SUPER MARKET</p>
+                    <p class="text-center">Phone No.: 9089898989</p>
+                    <p class="text-center">Bill No.: JYOTI127</p>
+                    <table class="table table-bordered mt-3">
+                        <thead>
+                            <tr>
+                                <th>Product</th>
+                                <th>Qty</th>
+                                <th>Price</th>
+                                <th>Total</th>
+                            </tr>
+                        </thead>
+                        <tbody id="billDetails"></tbody>
+                    </table>
+                </div>
+
+            </div>
+
+        </div>
+
+
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,41 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #c827b3;
+}
+
+h1 {
+    font-size:2rem!important;
+}
+
+h2 {
+    font-size:1.5rem!important;
+}
+
+h3 {
+    font-size:1rem;
+}
+
+h1,h2,h3 {
+    font-weight:bold;
+}
+
+#billArea {
+    text-align: center;
+    color: #4b0082;
+}
+
+#billArea table th, #billArea table td {
+    color: #4b0082;
+}
+
+#billingForm {
+    background-color:#e5a4e5!important
+}
+
+.category span {
+    color: red!important;
+}
+
+.output {
+    display: none;
+}
